@@ -1,0 +1,8 @@
+<launch>
+    <arg name="pkg_name" value="lidar_based_task1"/>
+    <arg name="node_name" default="drive_command"/>
+
+        <node name="$(arg node_name)" pkg="$(arg pkg_name)" type="$(arg node_name).py" output="screen">
+
+        </node>
+</launch>

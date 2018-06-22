@@ -1,0 +1,2 @@
+lidar_based_task1:vmrc/robotx_gazebo:vmrc/wamv_description
+-DCATKIN_DEVEL_PREFIX=/home/nctuece/robotx_gazebo/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/nctuece/robotx_gazebo/catkin_ws/install -G Unix Makefiles
