@@ -60,8 +60,8 @@ $ roslaunch lidar_based_task1 drive_command.py
 
 ## Result
 You can see the result on Youtube
--[Demo1](https://www.youtube.com/watch?v=ASzALV6Ubr4)
--[Demo2](https://www.youtube.com/watch?v=JJnWHN61KhI)
+- [Demo1](https://www.youtube.com/watch?v=ASzALV6Ubr4)
+- [Demo2](https://www.youtube.com/watch?v=JJnWHN61KhI)
 
 ## Remind
 * Add sensors on robot </br>
