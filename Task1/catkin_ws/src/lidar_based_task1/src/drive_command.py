@@ -26,19 +26,19 @@ class drive_command_node():
 	def obstacle_cb(self, pos_list):
 		print("Receive callback")
 
-		width = 100				#Width of the rec area
-		length = 0				#Length of the rec area
+		width = 100					#Width of the rec area
+		length = 0					#Length of the rec area
 		long_distance = 0		#Diagonal distance of the rec area
 		entrance_x = 0			#middle point of two entrance buoys
 		entrance_y = 0
-		exit_x = 0				#middle point of two exit buoys
+		exit_x = 0					#middle point of two exit buoys
 		exit_y = 0
 
-		trans_x = 0				#transition point
+		trans_x = 0					#transition point
 		trans_y = 0
 		group_1 = [[0 for x in range(2)] for y in range(2)]	#Entrance group 
 		group_2 = [[0 for x in range(2)] for y in range(2)]	#Exit group
-		diag = [[0 for x in range(2)] for y in range(2)]	#Diagonal group
+		diag = [[0 for x in range(2)] for y in range(2)]		#Diagonal group
 		bot_to_closest = 0	#distance between the robot and the point that is the closest to it
 		bot_to_width = 0   
 		bot_to_length = 0
@@ -204,11 +204,11 @@ class drive_command_node():
 		point2 = [0] * 2
 		s = -(pos_list.list[0].x - pos_list.list[1].x) / (pos_list.list[0].y - pos_list.list[1].y) #slope of the normal
 
-		point1[0] = ((pos_list.list[0].x + pos_list.list[1].x) / 2) - 1
-		point1[1] = ((pos_list.list[0].y + pos_list.list[1].y) / 2) - 1 * s
+		point1[0] = ((pos_list.list[0].x + pos_list.list[1].x) / 2) - 1.5
+		point1[1] = ((pos_list.list[0].y + pos_list.list[1].y) / 2) - 1.5 * s
 
-		point2[0] = ((pos_list.list[0].x + pos_list.list[1].x) / 2) + 1
-		point2[1] = ((pos_list.list[0].y + pos_list.list[1].y) / 2) + 1 * s
+		point2[0] = ((pos_list.list[0].x + pos_list.list[1].x) / 2) + 1.5
+		point2[1] = ((pos_list.list[0].y + pos_list.list[1].y) / 2) + 1.5 * s
 
 		#Find closer point
 		if (abs(point1[0]) < abs(point2[0])):
@@ -325,7 +325,7 @@ def main(args):
 	rospy.init_node('drive_command_node', anonymous = True) 
 	ic = drive_command_node()
 	rospy.spin()
-	       
+
 
 if __name__ == '__main__':
 	main(sys.argv)
