@@ -32,7 +32,7 @@ $ catkin_make
   - Black buoys with A3, A5, A7
   - Dock (not real size)
 
-## How to run the example
+## How to run the world
 ### Launch the world 
 the world is about coarse approximation of the RobotX competition area, Sand Island, Honolulu, HI.
 ```
