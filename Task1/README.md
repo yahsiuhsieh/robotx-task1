@@ -1,6 +1,6 @@
-# RobotX Gazebo
+# Task1
 ## Introduction
-This is the gazeo simulation of RobotX competition
+Task 1 simulation in gazebo, using LiDAR only.
 
 ## Prerequisites
 1. Install dependencies 
