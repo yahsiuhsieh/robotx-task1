@@ -32,7 +32,7 @@ $ catkin_make
   - Black buoys with A3, A5, A7
   - Dock (not real size)
 
-## How to run the world
+## How to run the example
 ### Launch the world 
 the world is about coarse approximation of the RobotX competition area, Sand Island, Honolulu, HI.
 ```
@@ -52,6 +52,11 @@ roslaunch robotx_gazebo usv_keydrive.launch
 ``` 
 robotx_gazebo usv_diffdrive.launch
 ```
+### Run Task 1
+```
+rosrun lidar_based_task1 clustering
+roslaunch lidar_based_task1 drive_command.py
+```
 
 ## Remind
 * Add sensors on robot </br>
@@ -60,3 +65,4 @@ please make the xacro file under vmrc/robotx_gazebo/urdf, and include the file i
 please save the file under vmrc/robotx_gazebo/worlds and chanege the arg "world" in vmrc/robotx_gazebo/sandisland_nctu.launch </br>
 * Add models or 3D file such like buoys, *.dae ...... </br>
  please save the file under vmrc/robotx_gazebo/models
+ * This is originated from RobotX-NCTU/robotx_gazebo
