@@ -59,7 +59,7 @@ $ roslaunch lidar_based_task1 drive_command.py
 ```
 
 ## Result
-You can see the result on Youtube
+You can see the result on Youtube or see the report
 - [Demo1](https://www.youtube.com/watch?v=ASzALV6Ubr4)
 - [Demo2](https://www.youtube.com/watch?v=JJnWHN61KhI)
 - [Report](https://github.com/arthur960304/RobotX_NCTU/blob/master/Task1/journal-robotx-nctu.pdf)
