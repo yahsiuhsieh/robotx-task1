@@ -26,20 +26,20 @@ class drive_command_node():
 	def obstacle_cb(self, pos_list):
 		print("Receive callback")
 
-		width = 100					#Width of the rec area
-		length = 0					#Length of the rec area
-		long_distance = 0		#Diagonal distance of the rec area
-		entrance_x = 0			#middle point of two entrance buoys
+		width = 100						#Width of the rec area
+		length = 0						#Length of the rec area
+		long_distance = 0					#Diagonal distance of the rec area
+		entrance_x = 0						#middle point of two entrance buoys
 		entrance_y = 0
-		exit_x = 0					#middle point of two exit buoys
+		exit_x = 0						#middle point of two exit buoys
 		exit_y = 0
 
-		trans_x = 0					#transition point
+		trans_x = 0						#transition point
 		trans_y = 0
 		group_1 = [[0 for x in range(2)] for y in range(2)]	#Entrance group 
 		group_2 = [[0 for x in range(2)] for y in range(2)]	#Exit group
-		diag = [[0 for x in range(2)] for y in range(2)]		#Diagonal group
-		bot_to_closest = 0	#distance between the robot and the point that is the closest to it
+		diag = [[0 for x in range(2)] for y in range(2)]	#Diagonal group
+		bot_to_closest = 0					#distance between the robot and the point that is the closest to it
 		bot_to_width = 0   
 		bot_to_length = 0
 		length_angle = 0
